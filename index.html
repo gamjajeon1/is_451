@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Baking Blog</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+        header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+        }
+        header a {
+            background-color: #ff6600;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #ffcc99;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .post {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .post p {
+            font-size: 1rem;
+        }
+        #about {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #ffcc99;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="bread.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>
+            <h1>Welcome to My Baking Blog</h1>
+            <p>Discover delicious recipes and baking tips!</p>
+            <a href="#about">Get Started</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#posts">Recipes</a>
+        <a href="#about">About the Project</a>
+    </nav>
+    <main id="home">
+        <section id="posts">
+            <div class="post">
+                <h2>Delicious Three-Tiered Pastries</h2>
+                <img src="three_tiered.jpg" alt="Three-Tiered Pastries">
+                <p>Discover the art of baking with our step-by-step guide to creating these beautiful three-tiered pastries. Perfect for any occasion, these treats are sure to impress your guests!</p>
+            </div>
+            <div class="post">
+                <h2>Classic Croissants</h2>
+                <img src="croissants.jpg" alt="Classic Croissants">
+                <p>Learn how to make classic, buttery croissants with our detailed recipe. Perfect for breakfast or a snack, these croissants are flaky and delicious.</p>
+            </div>
+            <div class="post">
+                <h2>Chocolate Eclairs</h2>
+                <img src="eclairs.jpg" alt="Chocolate Eclairs">
+                <p>Indulge in these rich and creamy chocolate eclairs. Our recipe guides you through the process of making these decadent pastries from scratch.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About My Baking Blog Project</h2>
+            <p>This blog is a labor of love, created to share my passion for baking with the world. Here, you'll find a collection of my favorite recipes, baking tips, and kitchen adventures. Whether you're a seasoned baker or just starting out, I hope you find inspiration and joy in these pages.</p>
+
+            <h2>Project Goals</h2>
+            <p>The main goals of this project are:</p>
+            <ul>
+                <li>To document and share my baking experiences and recipes.</li>
+                <li>To create a community of baking enthusiasts who can share tips, tricks, and support.</li>
+                <li>To explore and experiment with new recipes and baking techniques.</li>
+            </ul>
+
+            <h2>What You'll Find Here</h2>
+            <p>On this blog, you can expect to find:</p>
+            <ul>
+                <li>Detailed recipes for a variety of baked goods, from classic croissants to decadent chocolate eclairs.</li>
+                <li>Step-by-step guides with photos to help you follow along easily.</li>
+                <li>Tips and tricks for perfecting your baking skills.</li>
+                <li>Stories and anecdotes from my baking adventures.</li>
+            </ul>
+
+            <h2>Join the Community</h2>
+            <p>I invite you to join me on this baking journey. Feel free to leave comments, share your own baking experiences, and connect with other baking enthusiasts. Let's create a warm and welcoming community where we can all learn and grow together.</p>
+
+            <h2>Contact Me</h2>
+            <p>If you have any questions, suggestions, or just want to say hello, you can reach me at <a href="mailto:your_email@example.com">your_email@example.com</a>. I'd love to hear from you!</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 My Baking Blog
+    </footer>
+</body>
+</html>
